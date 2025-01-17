@@ -1,5 +1,6 @@
 package academy.javacore.Minterfaces.test;
 
+import academy.javacore.Minterfaces.dominio.DataLoader;
 import academy.javacore.Minterfaces.dominio.DatabaseLoader;
 import academy.javacore.Minterfaces.dominio.FileLoader;
 
@@ -15,6 +16,9 @@ public class DataLoaderTest01 {
 		
 		databaseLoader.checkPermission();
 		fileloader.checkPermission();
+		
+		DataLoader.retrieveMaxDataSize();
+		DatabaseLoader.retrieveMaxDataSize();
 	}
 
 }
