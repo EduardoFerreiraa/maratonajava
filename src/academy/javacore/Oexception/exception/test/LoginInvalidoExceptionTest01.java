@@ -12,6 +12,7 @@ public class LoginInvalidoExceptionTest01 {
 	}
 	
 	private static void logar() throws LoginInvalidoException {
+		@SuppressWarnings("resource")
 		Scanner teclado = new Scanner(System.in);
 		String usernameDB = "Goku";
 		String senhaDB = "ssj";

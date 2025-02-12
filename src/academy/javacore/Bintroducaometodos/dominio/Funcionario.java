@@ -39,4 +39,9 @@ public class Funcionario {
 		return media;
 	}
 
+	public void salvar() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
