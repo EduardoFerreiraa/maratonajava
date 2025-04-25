@@ -22,5 +22,5 @@ public class NumberFormatTest01 {
 			System.out.println(numberFormat.format(valor));
 		}
 	}
-
 }
+
