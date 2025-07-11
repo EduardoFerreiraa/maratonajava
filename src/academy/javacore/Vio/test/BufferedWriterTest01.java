@@ -11,6 +11,7 @@ public class BufferedWriterTest01 {
 		try (FileWriter fileWriter = new FileWriter(file, true)) {
 			BufferedWriter bufferWriter = new BufferedWriter(fileWriter);
 			bufferWriter.write("O Dev dojo é o melhor youtuber do Brasilllll");
+			bufferWriter.newLine();
 			bufferWriter.flush();
 		} catch (IOException ex) {
 			ex.printStackTrace();
