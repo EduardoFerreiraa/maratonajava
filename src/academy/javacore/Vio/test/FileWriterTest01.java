@@ -10,7 +10,7 @@ import java.io.IOException;
 // BufferedWriter
 // BufferedReader
 
-public class FileWriter01 {
+public class FileWriterTest01 {
 	public static void main(String[] args) {
 		File file = new File("filee.txt");
 		try (FileWriter fileWriter = new FileWriter(file, true)) {
