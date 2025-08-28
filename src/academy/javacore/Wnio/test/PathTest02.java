@@ -9,6 +9,7 @@ import java.nio.file.StandardCopyOption;
 public class PathTest02 {
 	public static void main(String[] args) throws IOException {
 		Path pastaPath = Paths.get("pasta/subpasta/subsubpasta");
+
 		
 		if(Files.notExists(pastaPath)) {
 			Path pastaDirectory = Files.createDirectories(pastaPath);
