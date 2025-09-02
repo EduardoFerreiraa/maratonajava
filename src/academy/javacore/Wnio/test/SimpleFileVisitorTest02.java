@@ -18,7 +18,8 @@ class ListAllFiles extends SimpleFileVisitor<Path> {
 
 	@Override
 	public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs) throws IOException {
-		return super.preVisitDirectory(dir, attrs);
+		System.out.println("pre visit " + dir.getFileName());
+		return FileVisitResult.CONTINUE;
 	}
 
 	@Override
@@ -28,10 +29,9 @@ class ListAllFiles extends SimpleFileVisitor<Path> {
 
 	@Override
 	public FileVisitResult postVisitDirectory(Path dir, IOException exc) throws IOException {
-		return super.postVisitDirectory(dir, exc);
+		System.out.println("post visit " + dir.getFileName());
+		return FileVisitResult.CONTINUE;
 	}
-	
-	
 	
 }
 
