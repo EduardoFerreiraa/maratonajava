@@ -3,10 +3,13 @@ package academy.javacore.Wnio.test;
 import java.nio.file.FileSystems;
 import java.nio.file.Path;
 import java.nio.file.PathMatcher;
+import java.nio.file.Paths;
 
 public class PathMatcherTest01 {
 	public static void main(String[] args) {
-		
+		Path path = Paths.get("pasta/subpasta/file.bkp");
+		Path path2 = Paths.get("pasta/subpasta/file.txt");
+		Path path3 = Paths.get("pasta/subpasta/file.java");
 	}
 	
 	private static void matches(Path path, String glob) {
