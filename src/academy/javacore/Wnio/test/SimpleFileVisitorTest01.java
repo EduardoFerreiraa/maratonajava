@@ -12,7 +12,9 @@ class ListAllFiles extends SimpleFileVisitor<Path> {
 
 	@Override
 	public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) {
-		
+		System.out.println(file.getFileName());
+		return  FileVisitResult.CONTINUE;
+
 	}
 	
 }
@@ -20,7 +22,7 @@ class ListAllFiles extends SimpleFileVisitor<Path> {
 public class SimpleFileVisitorTest01 {
 	public static void main(String[] args) {
 		Path path = Paths.get(".");
-		Files.walkFileTree(root, );
+		Files.walkFileTree(root, new ListAllFiles());
 	}
 
 }
